@@ -1,5 +1,5 @@
 const express = require("express");
-const bodyParser = require('body-parser');
+const bodyParser = require("body-parser");
 const path = require("path");
 
 const cors = require("./middlewares/cors");
@@ -10,11 +10,11 @@ const PORT = 3000;
 const app = express();
 
 app.use(
-    cors,
-    bodyParser.json(),
-    express.static(path.join(__dirname, 'public')),
-    mainRouter,
-    gamesRouter
+  cors,
+  bodyParser.json(),
+  express.static(path.join(__dirname, "public")),
+  mainRouter,
+  gamesRouter,
 );
 
 app.listen(PORT, () => {

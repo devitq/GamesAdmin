@@ -18,7 +18,7 @@ gamesRouter.post(
   checkIsTitleInArrayMiddleware,
   updateGamesArrayMiddleware,
   updateGamesFileMiddleware,
-  sendUpdatedGames
+  sendUpdatedGames,
 );
 
 gamesRouter.delete(
@@ -27,7 +27,7 @@ gamesRouter.delete(
   findGameByIdMiddleware,
   deleteGameMiddleware,
   updateGamesFileMiddleware,
-  sendUpdatedGames
+  sendUpdatedGames,
 );
 
 module.exports = gamesRouter;
